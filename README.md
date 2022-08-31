@@ -18,7 +18,7 @@ A Deepstream based implementation of Facedetector and Landmarks extractor as Pri
 <a name="run_sample"></a>
 ## Running Sample Applications
 ```
-git clone deepstream-facenet-landmarks-app
+git clone https://github.com/rahulsharma11/deepstream-facenet-landmarks-app.git
 cd deepstream-facenet-landmarks-app/apps/deepstream-app
 # check the Makefile Paths
 make -j
