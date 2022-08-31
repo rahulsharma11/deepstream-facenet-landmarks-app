@@ -1,0 +1,30 @@
+
+[property]
+gpu-id=0
+model-engine-file=../launchConfig/facedetector/int_8/faciallandmarks.etlt_b32_gpu0_int8.engine
+tlt-model-key=nvidia_tlt
+tlt-encoded-model=../launchConfig/facedetector/int_8/faciallandmarks.etlt
+int8-calib-file=../launchConfig/facedetector/int_8/fpenet_cal.txt
+#dynamic batch size
+batch-size=32
+## 0=FP32, 1=INT8, 2=FP16 mode
+network-mode=1
+num-detected-classes=1
+output-blob-names=softargmax,softargmax:1,conv_keypoints_m80
+#0=Detection 1=Classifier 2=Segmentation 100=other
+network-type=100
+# Enable tensor metadata output
+output-tensor-meta=1
+#1-Primary  2-Secondary
+process-mode=2
+#gie-unique-id=2
+#operate-on-gie-id=1 
+net-scale-factor=1.0
+offsets=0.0
+input-object-min-width=5
+input-object-min-height=5
+#0=RGB 1=BGR 2=GRAY
+model-color-format=2
+
+[class-attrs-all]
+threshold=0.0
